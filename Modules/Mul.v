@@ -18,7 +18,8 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-module mux(input [31:0]A, input [31:0]B, input rst, output reg [63:0]Z, reg [63:0]Y);
+module mux(input [31:0]A, input [31:0]B, input rst, output reg [63:0]Z);
+reg [63:0]Y;
 integer i;
 always@(rst)
 begin

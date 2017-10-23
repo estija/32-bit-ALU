@@ -23,8 +23,7 @@ reg [31:0]A;
 reg [31:0]B;
 reg rst;
 wire [63:0]Z;
-wire [63:0]Y;
-mux uut(.A(A), .B(B), .Z(Z), .Y(Y), .rst(rst));
+mux uut(.A(A), .B(B), .Z(Z), .rst(rst));
 initial begin
 rst=1;
 #5 rst=0;
